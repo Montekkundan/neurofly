@@ -68,7 +68,6 @@ src/
 tests/
   test_terrain_outputs.py
   test_navigation_outputs.py
-blog.md
 ```
 
 Generated experiment outputs go under `outputs/`. That folder is ignored by Git so local runs do not bloat the repository. Curated blog media lives under `media/`.
@@ -165,16 +164,40 @@ Main outputs:
 - `outputs/odor_research_try/summary_with_ci.csv`
 - `outputs/odor_research_try/pairwise_stats.csv`
 
-## Blog And Media
+## Media Preview
 
-The writeup is in `blog.md`.
+The repository includes curated figures and short videos from the terrain and odor experiments. Images render directly on the GitHub README page; videos are linked as repository media files.
 
-The local media folder contains curated figures and videos for the blog:
+### A: Terrain Locomotion Figures
 
-- `media/images/`
-- `media/videos/`
+![Terrain benchmark summary](media/images/a1-terrain-benchmark-summary.png)
 
-After uploading the assets to Cloudflare R2, replace the local paths in `blog.md` with public R2 URLs.
+![Terrain trajectory overlays](media/images/a2-terrain-trajectories.png)
+
+![Terrain speed with confidence intervals](media/images/a3-terrain-speed-ci.png)
+
+![Terrain distance with confidence intervals](media/images/a4-terrain-distance-ci.png)
+
+### B: Odor Navigation Figures
+
+![Odor navigation trajectories](media/images/b1-odor-navigation-trajectories.png)
+
+![Odor navigation success curve](media/images/b2-odor-success-curve.png)
+
+![Odor success by scenario](media/images/b3-odor-success-by-scenario.png)
+
+![Odor final distance by scenario](media/images/b4-odor-distance-by-scenario.png)
+
+![Full odor policy trajectories](media/images/b5-full-odor-policy-trajectories.png)
+
+### Videos
+
+- [A1: Terrain locomotion montage](media/videos/a1-terrain-locomotion-montage.mp4)
+- [A2: Hybrid controller on block terrain](media/videos/a2-terrain-hybrid-blocks.mp4)
+- [B1: Odor navigation run](media/videos/b1-odor-navigation-run.mp4)
+- [B2: Longer odor navigation trial](media/videos/b2-odor-navigation-hard-trial.mp4)
+
+The source assets live under `media/images/` and `media/videos/`.
 
 ## Verification
 
