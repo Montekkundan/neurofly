@@ -1,0 +1,64 @@
+cff-version: 1.2.0
+message: "If you use this project, cite this software and also cite the upstream FlyGym/NeuroMechFly papers listed below."
+title: "Neurofly: Reproducible NeuroMechFly Terrain and Odor Benchmarks"
+type: software
+authors:
+  - family-names: Kundan
+    given-names: Montek
+version: 0.1.0
+date-released: "2026-05-27"
+license: MIT
+keywords:
+  - NeuroMechFly
+  - FlyGym
+  - computational neuroscience
+  - locomotion
+  - olfaction
+  - embodied simulation
+references:
+  - type: article
+    title: "NeuroMechFly v2: simulating embodied sensorimotor control in adult Drosophila"
+    authors:
+      - family-names: Wang-Chen
+        given-names: Sibo
+      - family-names: Stimpfling
+        given-names: Victor Alfred
+      - family-names: Lam
+        given-names: Thomas Ka Chung
+      - family-names: Ozdil
+        given-names: Pembe Gizem
+      - family-names: Genoud
+        given-names: Louise
+      - family-names: Hurtak
+        given-names: Femke
+      - family-names: Ramdya
+        given-names: Pavan
+    journal: Nature Methods
+    year: 2024
+    volume: 21
+    issue: 12
+    start: 2353
+    end: 2362
+    doi: 10.1038/s41592-024-02497-y
+  - type: article
+    title: "NeuroMechFly, a neuromechanical model of adult Drosophila melanogaster"
+    authors:
+      - family-names: Lobato-Rios
+        given-names: Victor
+      - family-names: Tata Ramalingasetty
+        given-names: Shravan
+      - family-names: Ozdil
+        given-names: Pembe Gizem
+      - family-names: Arreguit
+        given-names: Jonathan
+      - family-names: Ijspeert
+        given-names: Auke Jan
+      - family-names: Ramdya
+        given-names: Pavan
+    journal: Nature Methods
+    year: 2022
+    volume: 19
+    issue: 5
+    start: 620
+    end: 627
+    doi: 10.1038/s41592-022-01466-7
