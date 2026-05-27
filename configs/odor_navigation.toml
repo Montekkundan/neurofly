@@ -1,0 +1,31 @@
+seed = 7
+render = false
+save_video = false
+output_dir = "outputs/odor_navigation"
+run_time_s = 2.5
+decision_interval = 0.05
+distance_threshold = 1.5
+timestep = 0.0001
+trials = 4
+spawn_radius_min = 0.5
+spawn_radius_max = 1.75
+spawn_z = 0.2
+random_orientation = true
+marker_size = 0.3
+
+attractive_gain = -500.0
+aversive_gain = 80.0
+attractive_palps_antennae_weights = [1.0, 9.0]
+aversive_palps_antennae_weights = [0.0, 10.0]
+
+[arena]
+odor_source = [
+  [8.0, 0.0, 1.5],
+  [4.0, -3.0, 1.5],
+  [4.0, 3.0, 1.5],
+]
+peak_odor_intensity = [
+  [1.0, 0.0],
+  [0.0, 1.0],
+  [0.0, 1.0],
+]

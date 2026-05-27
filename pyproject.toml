@@ -1,7 +1,7 @@
 [project]
 name = "neurofly"
 version = "0.1.0"
-description = "Reproducible NeuroMechFly terrain locomotion benchmark."
+description = "Reproducible NeuroMechFly terrain locomotion and odor navigation benchmarks."
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [
@@ -22,6 +22,9 @@ dev = [
 neurofly-env-check = "neurofly.env_check:main"
 neurofly-terrain-benchmark = "neurofly.terrain_benchmark:app"
 neurofly-terrain-research = "neurofly.terrain_research:app"
+neurofly-odor-env-check = "neurofly_odor.env_check:main"
+neurofly-odor-benchmark = "neurofly_odor.odor_benchmark:app"
+neurofly-odor-research = "neurofly_odor.navigation_research:app"
 
 [build-system]
 requires = ["hatchling"]
@@ -29,6 +32,9 @@ build-backend = "hatchling.build"
 
 [tool.uv]
 package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/neurofly", "src/neurofly_odor"]
 
 [tool.ruff]
 line-length = 100
